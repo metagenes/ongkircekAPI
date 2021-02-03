@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/provinces', [App\Http\Controllers\ShippingFeeController::class, 'getProvinces']);
+Route::get('/cities/{id}', [App\Http\Controllers\ShippingFeeController::class, 'getCities']);
+Route::post('/checkOngkir', [App\Http\Controllers\ShippingFeeController::class, 'checkOngkir']);
