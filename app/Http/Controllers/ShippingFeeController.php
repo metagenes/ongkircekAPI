@@ -58,7 +58,7 @@ class ShippingFeeController extends Controller
      * @param  mixed $request
      * @return void
      */
-    public function checkOngkir(Request $request)
+    public function shippingcheck(Request $request)
     {
         $response = Http::withHeaders([
             'key' => env('RAJAONGKIRAPI')

@@ -20,4 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/provinces', [App\Http\Controllers\ShippingFeeController::class, 'getProvinces']);
 Route::get('/cities/{id}', [App\Http\Controllers\ShippingFeeController::class, 'getCities']);
-Route::post('/checkOngkir', [App\Http\Controllers\ShippingFeeController::class, 'checkOngkir']);
+Route::post('/shippingcheck', [App\Http\Controllers\ShippingFeeController::class, 'shippingcheck']);
